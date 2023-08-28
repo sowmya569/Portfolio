@@ -1,0 +1,24 @@
+body{
+    background-color:black;
+    display:flex;
+    height: 100vh;
+    overflow-y: hidden;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+#ele{
+    display: flex;
+    color:white;
+}
+@keyframes anime{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+img{
+    animation: anime 1s infinite;
+}
