@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+    margin:10px;
+    font-family: 'Playfair Display', serif;
+}
+a{
+    color:white;
+    font-size:large;
+}
+.list{
+    flex-direction: row;
+    display:flex;
+    margin-right: 10px;;
+}
+nav{
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+    width:100vw;
+    height:10vh;
+    position: fixed;
+    z-index: 1;
+    overflow:auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color:black;
+    margin: 0px;
+    overflow-x:hidden;
+    width: 100vw;
+    overflow-y: auto;
+}
+#head{
+font-size:larger;
+color:red;
+font-family: 'Black Ops One', cursive;
+animation: portfolio 1s 1s ease-in-out infinite;
+}
+#head:hover{
+    transform: scale(1.2);
+    margin-left:15px;
+}
+li:hover{
+    transform: scale(0.95);
+}
+a:hover{
+    color:red;
+}
+@keyframes portfolio {
+0%{
+    color:pink;
+}
+}
+a{
+    text-decoration: none;
+}
+#slider{
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    background-color: white;
+    justify-content:center ;
+    width:100vw;
+}
+#slider:hover{
+    transform: scale(0.8);
+}
+#element{
+    color:black;
+    font-family: 'Black Ops One', cursive;
+   text-align: center;
+}
+#type{
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    justify-content: center;
+    margin:10px;
+}
+#type:hover{
+transform:rotate(-10deg);
+}
+.colour{
+    font-size: 3vw;
+    color: white;
+    font-family: 'Black Ops One', cursive;
+}
+#image{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin:20px;
+ }
+@keyframes moveupdown {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+#image1{
+    animation: moveupdown 5s infinite;
+}
+@media  (max-width:700px) {
+#image{
+    justify-content: center;
+    flex-direction: column;
+}   
+}
+.fonty{
+    color: white;
+    font-family: 'Lora', serif;
+}
+#maindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    /* background-color: white; */
+}
+#edu{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+      /* background-color: white; */
+}
+#school{
+   background-color: pink;   
+   color:black; 
+   text-align: center;
+   width: 50vw;
+   overflow:auto;
+   border-radius: 10px;
+}
+#college{
+    background-color: orange;
+    text-align: center;
+    width: 50vw;
+    overflow:auto;
+    border-radius: 10px;
+}
+#engineering{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    width: 50vw;
+    overflow:auto;
+    border-radius: 10px;
+}
+#cpp{
+text-align: center;
+font-family: 'Black Ops One', cursive;
+}
+#skills{
+    margin: 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content:space-around;
+}
+#java{
+    font-family: 'Black Ops One', cursive;
+    text-align: center; 
+}
+#py{
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+}
+#front{
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+}
+#andriod{
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+}
+@media (max-width:500px) {
+    #skills{
+        flex-direction: column;
+    }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+    #skills {
+      flex-wrap: wrap;
+    }
+}
+#contact{
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    height: 20vh;
+    background-color: white;
+}
+.diva{
+    color:black
+}
